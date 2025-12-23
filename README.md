@@ -1,2 +1,55 @@
-# Medion
-나만의 자가진단 APP 온디바이스  AI
+# Medion: AI 기반 상처 및 질병 자가진단 앱
+
+## 프로젝트 소개
+
+`Medion`은 사용자가 자신의 건강 상태를 쉽고 빠르게 자가 진단할 수 있도록 돕는 안드로이드 애플리케이션입니다. 이미지 분석 딥러닝 모델과 증상 기반 예측 모델을 활용하여 사용자가 겪는 상처와 증상에 대한 AI 분석 결과를 제공하고, 이에 따른 설명과 관리 방안을 제시합니다. 사용자 친화적인 인터페이스를 통해 건강 관리에 대한 접근성을 높이고, 일상생활 속 건강 지킴이 역할을 수행합니다.
+
+## 주요 기능
+
+`Medion`은 다음과 같은 핵심 기능들을 제공합니다.
+
+1.  **회원가입 및 로그인 시스템:**
+    *   사용자별 맞춤형 건강 기록 관리를 위한 안전한 회원가입 및 로그인 기능을 제공합니다.
+    *   사용자의 개인 정보(이름, 나이, 성별 등)를 저장하고 관리합니다.
+
+2.  **상처 이미지 분석 (WoundNet AI 모델):**
+    *   사용자가 촬영하거나 갤러리에서 선택한 상처 이미지를 딥러닝 모델(`WoundNet.tflite`)이 분석합니다.
+    *   타박상, 긁힘, 베인 상처 등 상처의 종류를 분류하고 예측 신뢰도를 함께 보여줍니다.
+
+3.  **증상 기반 질병 예측 (AI 예측 모델):**
+    *   사용자가 131가지의 다양한 증상 중에서 해당하는 증상들을 선택할 수 있는 ChipGroup UI를 제공합니다.
+    *   선택된 증상 데이터를 기반으로 `disease_model.tflite` 딥러닝 모델이 질병을 예측하고, 예측 결과를 제공합니다.
+
+4.  **고통 수준 및 체온 기록:**
+    *   사용자가 현재 느끼는 고통 수준을 0부터 10까지 선택하여 기록할 수 있습니다.
+    *   블루투스 기반 체온 측정 기능은 현재 우회되어 임의의 체온을 자동으로 기록하지만, 향후 실제 연동 가능성을 열어두고 있습니다.
+
+5.  **자가 진단 결과 상세 리포트:**
+    *   상처 이미지 분석 결과와 증상 기반 질병 예측 결과를 한눈에 볼 수 있는 종합적인 분석 화면을 제공합니다.
+    *   예측된 질병에 대한 상세 설명 및 개인별 맞춤 피드백과 관리 방안을 제공하여 사용자의 이해를 돕습니다.
+
+6.  **로컬 데이터베이스 연동:**
+    *   사용자의 자가 진단 기록, AI 분석 결과, 질병 정보 및 예방 조치 등을 SQLite 로컬 데이터베이스에 저장하고 관리합니다.
+    *   `symptom_description.csv` 및 `symptom_precaution.csv` 데이터를 사전 로딩하여 질병 정보 조회에 활용합니다.
+
+## 사용된 기술 스택
+
+*   **개발 언어:** Kotlin
+*   **플랫폼:** Android Studio
+*   **AI/머신러닝:** TensorFlow Lite (`.tflite` 모델 파일)
+    *   WoundNet (상처 이미지 분류 모델)
+    *   증상 기반 질병 예측 모델
+*   **데이터베이스:** SQLite (안드로이드 로컬 데이터베이스)
+*   **버전 관리:** Git & GitHub (`main` 브랜치 활용)
+*   **UI/UX:** XML 레이아웃, Material Design (ChipGroup 등)
+
+##  실제 사용 화면
+![앱 메인화면](https://github.com/MaINoo999/Medion/blob/d23b5ce38c1262fd1a7505743faeffc825807971/imege/1.%EB%A9%94%EC%9D%B8%ED%99%94%EB%A9%B4.png)<img src="https://user-images.githubusercontent.com/YOUR_GITHUB_ID/REPOSITORY_ID/UNIQUE_IMAGE_ID.png" width="50%">
+<!-- 또는 픽셀 단위로 조절: width="300" -->
+![앱 자가진단 화면](https://github.com/MaINoo999/Medion/blob/d23b5ce38c1262fd1a7505743faeffc825807971/imege/3.1%EC%9E%90%EA%B0%80%EC%A7%84%EB%8B%A8.png)<img src="https://user-images.githubusercontent.com/YOUR_GITHUB_ID/REPOSITORY_ID/UNIQUE_IMAGE_ID.png" width="50%">
+![앱 자가진단 결과](https://github.com/MaINoo999/Medion/blob/d23b5ce38c1262fd1a7505743faeffc825807971/imege/5.%EC%A7%84%EB%8B%A8%EA%B2%B0%EA%B3%BC%ED%99%94%EB%A9%B4.png)<img src="https://user-images.githubusercontent.com/YOUR_GITHUB_ID/REPOSITORY_ID/UNIQUE_IMAGE_ID.png" width="50%">
+![앱 종료 화면](https://github.com/MaINoo999/Medion/blob/d23b5ce38c1262fd1a7505743faeffc825807971/imege/6.%EC%A2%85%EB%A3%8C%ED%99%94%EB%A9%B4.png)<img src="https://user-images.githubusercontent.com/YOUR_GITHUB_ID/REPOSITORY_ID/UNIQUE_IMAGE_ID.png" width="50%">
+
+## 개발인원 
+
+* 4명- 프로젝트 기획 및 전체 개발
