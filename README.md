@@ -45,7 +45,7 @@
 
 ##  실제 사용 화면
 ![앱 메인화면](https://github.com/MaINoo999/Medion/blob/d23b5ce38c1262fd1a7505743faeffc825807971/imege/1.%EB%A9%94%EC%9D%B8%ED%99%94%EB%A9%B4.png)<img src="https://user-images.githubusercontent.com/YOUR_GITHUB_ID/REPOSITORY_ID/UNIQUE_IMAGE_ID.png" width="50%">
-![앱 실행 영상](https://github.com/MaINoo999/Medion/blob/f5d0a0054036fbaff3715fd6dfd96c26b2e585da/medionApp%EC%8B%9C%EC%97%B0%EC%98%81%EC%83%81.gif)<img src="https://user-images.githubusercontent.com/YOUR_GITHUB_ID/REPOSITORY_ID/UNIQUE_GIF_ID.gif" width="800">
+![앱 실행 영상](https://github.com/MaINoo999/Medion/blob/f5d0a0054036fbaff3715fd6dfd96c26b2e585da/medionApp%EC%8B%9C%EC%97%B0%EC%98%81%EC%83%81.gif)
 
 ## 개발인원 
 
