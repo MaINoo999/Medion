@@ -48,6 +48,7 @@
 ![앱 자가진단 화면](https://github.com/MaINoo999/Medion/blob/d23b5ce38c1262fd1a7505743faeffc825807971/imege/3.1%EC%9E%90%EA%B0%80%EC%A7%84%EB%8B%A8.png)<img src="https://user-images.githubusercontent.com/YOUR_GITHUB_ID/REPOSITORY_ID/UNIQUE_IMAGE_ID.png" width="50%">
 ![앱 자가진단 결과](https://github.com/MaINoo999/Medion/blob/d23b5ce38c1262fd1a7505743faeffc825807971/imege/5.%EC%A7%84%EB%8B%A8%EA%B2%B0%EA%B3%BC%ED%99%94%EB%A9%B4.png)<img src="https://user-images.githubusercontent.com/YOUR_GITHUB_ID/REPOSITORY_ID/UNIQUE_IMAGE_ID.png" width="50%">
 ![앱 종료 화면](https://github.com/MaINoo999/Medion/blob/d23b5ce38c1262fd1a7505743faeffc825807971/imege/6.%EC%A2%85%EB%A3%8C%ED%99%94%EB%A9%B4.png)<img src="https://user-images.githubusercontent.com/YOUR_GITHUB_ID/REPOSITORY_ID/UNIQUE_IMAGE_ID.png" width="50%">
+![앱 실행 영상](https://github.com/MaINoo999/Medion/blob/f5d0a0054036fbaff3715fd6dfd96c26b2e585da/medionApp%EC%8B%9C%EC%97%B0%EC%98%81%EC%83%81.gif)<img src="https://user-images.githubusercontent.com/YOUR_GITHUB_ID/REPOSITORY_ID/UNIQUE_GIF_ID.gif" width="600">
 
 ## 개발인원 
 
