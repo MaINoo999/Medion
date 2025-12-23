@@ -1,0 +1,59 @@
+#define F_CPU 16000000UL
+#include <avr/io.h>
+#include <util/delay.h>
+
+// LCD 8bit mode mapping:
+// LCD D0~D7 → PORTA (PA0~PA7)
+// RS = PG0
+// E  = PG2
+// RW = GND
+
+void LCD_enable()
+{
+	PORTG |= (1<<PG2);
+	_delay_us(1);
+	PORTG &= ~(1<<PG2);
+	_delay_us(100);
+}
+
+void LCD_cmd(uint8_t cmd)
+{
+	PORTG &= ~(1<<PG0);   // RS=0 (명령)
+	PORTA = cmd;          // D0~D7 출력
+	LCD_enable();
+	_delay_ms(2);
+}
+
+void LCD_data(uint8_t data)
+{
+	PORTG |= (1<<PG0);    // RS=1 (데이터)
+	PORTA = data;         // D0~D7 출력
+	LCD_enable();
+	_delay_ms(2);
+}
+
+void LCD_init()
+{
+	DDRA = 0xFF;                   // D0~D7 출력
+	DDRG |= (1<<PG0) | (1<<PG2);   // RS, E 출력
+
+	_delay_ms(50);
+
+	LCD_cmd(0x38); // 8bit, 2-line
+	LCD_cmd(0x0C); // display on
+	LCD_cmd(0x06); // entry mode
+	LCD_cmd(0x01); // clear
+	_delay_ms(2);
+}
+
+void LCD_print(char *s)
+{
+	while(*s) LCD_data(*s++);
+}
+
+int main()
+{
+	LCD_init();
+	LCD_print("HELLO LCD");
+	while(1);
+}
